@@ -1,4 +1,6 @@
-#**Vision_Gestures_Interface**
+**Vision_Gestures_Interface**
+
+
 Gesture-based virtual mouse and system control using real-time computer vision. This project leverages MediaPipe, OpenCV, and PyAutoGUI to detect hand gestures and map them to system actions like cursor movement, clicking, volume control, and brightness adjustment—enabling touchless interaction with your desktop.
 
 📌 Features
