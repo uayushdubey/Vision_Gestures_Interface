@@ -1,5 +1,7 @@
 **Vision_Gestures_Interface**
 
+![image](https://github.com/user-attachments/assets/f2f598b7-9af7-4e5c-955e-0646590bd876)
+
 
 Vision_Gestures_Interface is a gesture-based Human-Computer Interface that enables touchless desktop control using real-time computer vision. Built using MediaPipe, OpenCV, and PyAutoGUI, the system maps hand gestures to desktop functions including mouse movement, clicking, scrolling, volume control, and brightness adjustment. The result is an intuitive, contact-free interaction experience across various platforms.
 
