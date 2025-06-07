@@ -45,11 +45,18 @@ pip install -r requirements.txt
 
 # Install dependencies
 pip install -r requirements.txt
+
 Gesture Mapping Overview
+
 Gesture	Action
+
 Victory (✌️)	Move Cursor
+
 Index Finger Up	Left Click
+
 Pinch Gesture	Volume/Brightness Adjustment
+
 Fist	Drag Operation
+
 Rock Sign	Scroll
 
