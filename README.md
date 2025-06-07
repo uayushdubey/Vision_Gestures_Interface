@@ -1,59 +1,41 @@
-# Vision_Gestures_Interface
-
-**Vision_Gestures_Interface** is a gesture-based human-computer interface that enables **touchless desktop interaction** using real-time computer vision. Built using **MediaPipe**, **OpenCV**, and **PyAutoGUI**, the system recognizes hand gestures to control system functions such as mouse movement, clicks, scrolling, volume, and brightness — creating a seamless, contact-free user experience.
-
----
-
-## ✨ Key Features
-
-- 🖐️ **Real-Time Hand Tracking**  
-  Utilizes Google MediaPipe for accurate 21-point hand landmark detection at 30+ FPS.
-
-- 🖱️ **Mouse Control via Gestures**  
-  Control the cursor, left/right click, drag, and scroll with intuitive hand gestures.
-
-- 🔊 **System Volume & Brightness Control**  
-  Adjust system volume and brightness using pinch gestures (Windows only).
-
-- 🧠 **Gesture Recognition Engine**  
-  Built on a state-based logic model with temporal smoothing to ensure stable gesture recognition.
-
-- ⚙️ **Modular and Extensible Design**  
-  Gesture-to-action mappings are modular and easy to extend or modify.
-
-- 🌐 **Cross-Platform Capabilities**  
-  Works on Windows, macOS, and Linux (note: some features may be OS-specific).
-
----
-
-## 🧠 System Architecture
-
-The following architecture outlines the internal working pipeline of the application:
-
-Camera Feed (OpenCV)
-↓
-Hand Detection (MediaPipe)
-↓
-Gesture Classification
-↓
-Controller Logic (Gesture → Action)
-↓
-System Control via PyAutoGUI / OS APIs
+**Vision_Gestures_Interface**
 
 
-Each gesture is interpreted through a combination of spatial data (e.g., landmark distance/angle) and temporal smoothing (tracking over multiple frames). Actions are triggered only when confidence and stability thresholds are met, ensuring both accuracy and usability.
+Vision_Gestures_Interface is a gesture-based Human-Computer Interface that enables touchless desktop control using real-time computer vision. Built using MediaPipe, OpenCV, and PyAutoGUI, the system maps hand gestures to desktop functions including mouse movement, clicking, scrolling, volume control, and brightness adjustment. The result is an intuitive, contact-free interaction experience across various platforms.
 
----
+Key Features:
+1. Real-Time Hand Tracking
+Leverages Google MediaPipe for efficient 21-point hand landmark detection, running at over 30 FPS for seamless performance.
 
-## 🚀 Installation Instructions
+2. Mouse Control via Gestures
+Supports cursor movement, left/right clicking, drag, and scroll through natural hand gestures.
 
-Follow the steps below to set up and run the project locally.
+3. Volume and Brightness Adjustment
+Enables gesture-based control for system volume and screen brightness (Windows only).
 
-### Prerequisites
+4. Robust Gesture Recognition Engine
+Implements state-driven logic with temporal smoothing to ensure accurate and stable gesture interpretation.
 
-Ensure Python 3.8+ is installed. Then install the dependencies:
+5. Modular and Extensible Architecture
+Designed for easy integration and extension of new gestures and actions.
 
-```bash
+Cross-Platform Compatibility
+Works on Windows, macOS, and Linux (feature availability may vary by OS).
+
+**System Architecture**
+The system processes input in a modular pipeline, converting real-time visual data into operating system commands:
+
+Camera Feed (OpenCV) → Hand Detection (MediaPipe) → Gesture Classification → Controller Logic (Gesture-to-Action Mapping) → System Control (via PyAutoGUI / OS APIs)
+
+Gesture recognition is based on spatial features (such as landmark positions, distances, and angles), enhanced by temporal smoothing over multiple frames. Actions are triggered only when confidence and stability thresholds are met, ensuring both responsiveness and accuracy.
+
+**Installation Instructions**
+Prerequisites
+Python 3.8 or later
+
+pip package manager
+
+Setup
 # Clone the repository
 git clone https://github.com/uayushdubey/Vision_Gestures_Interface.git
 cd Vision_Gestures_Interface
@@ -61,10 +43,13 @@ cd Vision_Gestures_Interface
 # Install dependencies
 pip install -r requirements.txt
 
-✋ Supported Gestures
+# Install dependencies
+pip install -r requirements.txt
+Gesture Mapping Overview
 Gesture	Action
-✌️ Victory	Move Cursor
-👆 Index Up	Left Click
-🤏 Pinch	Volume/Brightness Control
-✊ Fist	Drag
-🤘 Rock	Scroll
+Victory (✌️)	Move Cursor
+Index Finger Up	Left Click
+Pinch Gesture	Volume/Brightness Adjustment
+Fist	Drag Operation
+Rock Sign	Scroll
+
